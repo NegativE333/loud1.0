@@ -102,19 +102,19 @@ function consoleText(words, id, colors) {
 
 let songIndex = 0;
 let audioElement1 = new Audio("Hamare_sath_shree_raghunath.mp3");
-let audioElement2 = new Audio("music/Aye_Mere_Humsafar.mp3");
-let audioElement3 = new Audio("music/Aankhein_Khuli_Song_Mohabbatein.mp3");
-let audioElement4 = new Audio("music/Saaton_Janam_Main_Tere.mp3");
-let audioElement5 = new Audio("music/Chand_se_parda_keejiye.mp3");
-let audioElement6 = new Audio("music/Meri_Mehbooba.mp3");
-let audioElement7 = new Audio("music/Ghalat_Fehmi.mp3");
-let audioElement8 = new Audio("music/Soch_Liya.mp3");
-let audioElement9 = new Audio("music/KHAIRIYAT.mp3");
-let audioElement10 = new Audio("music/Jaan_Hai_Meri.mp3");
-let audioElement11 = new Audio("music/Aashiqui_Aa_Gayi.mp3");
-let audioElement12 = new Audio("music/Luka_Chuppi_Duniyaa.mp3");
-let audioElement13 = new Audio("music/Excuses.mp3");
-let audioElement14 = new Audio("music/Bavni.mp3")
+let audioElement2 = new Audio("Aye_Mere_Humsafar.mp3");
+let audioElement3 = new Audio("Aankhein_Khuli_Song_Mohabbatein.mp3");
+let audioElement4 = new Audio("Saaton_Janam_Main_Tere.mp3");
+let audioElement5 = new Audio("Chand_se_parda_keejiye.mp3");
+let audioElement6 = new Audio("Meri_Mehbooba.mp3");
+let audioElement7 = new Audio("Ghalat_Fehmi.mp3");
+let audioElement8 = new Audio("Soch_Liya.mp3");
+let audioElement9 = new Audio("KHAIRIYAT.mp3");
+let audioElement10 = new Audio("Jaan_Hai_Meri.mp3");
+let audioElement11 = new Audio("Aashiqui_Aa_Gayi.mp3");
+let audioElement12 = new Audio("Luka_Chuppi_Duniyaa.mp3");
+let audioElement13 = new Audio("Excuses.mp3");
+let audioElement14 = new Audio("Bavni.mp3")
 let masterplay = document.getElementById("masterplay");
 let progressBar = document.getElementById("progressBar");
 
@@ -215,7 +215,7 @@ function audio14(){
     });
     document.querySelector(".status-bavni").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Gajana Maharaj Bavni<p>";
-    document.getElementById("display").src = "img/bavni.jpg";
+    document.getElementById("display").src = "bavni.jpg";
 }
 
 function audio14p(){
@@ -255,7 +255,7 @@ function audio2(){
   });
     document.querySelector(".status-aye_mare_humsafar").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Aye Mare Humsafar<p>";
-    document.getElementById("display").src = "img/aye_mare_humsafar.png";
+    document.getElementById("display").src = "aye_mare_humsafar.png";
 }
 
 function audio2p(){
@@ -296,7 +296,7 @@ function audio3(){
   });
     document.querySelector(".status-aankhein_khuli").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Aankhein Khuli<p>";
-    document.getElementById("display").src = "img/aankhein_khuli.png";
+    document.getElementById("display").src = "aankhein_khuli.png";
 }
 
 function audio3p(){
@@ -336,7 +336,7 @@ function audio4(){
   });
     document.querySelector(".status-saaton_janam").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Saaton Janam<p>";
-    document.getElementById("display").src = "img/saaton_janam.png";
+    document.getElementById("display").src = "saaton_janam.png";
 }
 
 function audio4p(){
@@ -377,7 +377,7 @@ function audio5(){
   });
     document.querySelector(".status-chand_se_parda").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Chand Se Parda<p>";
-    document.getElementById("display").src = "img/chand_se_parda.png";
+    document.getElementById("display").src = "chand_se_parda.png";
 }
 
 function audio5p(){
@@ -417,7 +417,7 @@ function audio6(){
   });
     document.querySelector(".status-meri_mehbooba").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Meri Mehbooba<p>";
-    document.getElementById("display").src = "img/meri_mehbooba.png";
+    document.getElementById("display").src = "meri_mehbooba.png";
 }
 
 function audio6p(){
@@ -457,7 +457,7 @@ function audio7(){
   });
     document.querySelector(".status-ghalat_fehmi").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Ghalat Fehmi<p>";
-    document.getElementById("display").src = "img/ghalat_fehmi.png";
+    document.getElementById("display").src = "ghalat_fehmi.png";
 }
 
 function audio7p(){
@@ -497,7 +497,7 @@ function audio8(){
   });
     document.querySelector(".status-soch_liya").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Soch Liya<p>";
-    document.getElementById("display").src = "img/soch_liya.png";
+    document.getElementById("display").src = "soch_liya.png";
 }
 
 function audio8p(){
@@ -537,7 +537,7 @@ function audio9(){
   });
     document.querySelector(".status-khairiyat").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Khairiyat<p>";
-    document.getElementById("display").src = "img/khairiyat.png";
+    document.getElementById("display").src = "khairiyat.png";
 }
 
 function audio9p(){
@@ -577,7 +577,7 @@ function audio10(){
   });
     document.querySelector(".status-jaan_hai_meri").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Jaan Hai Meri<p>";
-    document.getElementById("display").src = "img/jaan_hai_meri.png";
+    document.getElementById("display").src = "jaan_hai_meri.png";
 }
 
 function audio10p(){
@@ -617,7 +617,7 @@ function audio11(){
   });
     document.querySelector(".status-aashiqui_aa_gayi").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Aashiqui Aa Gayi<p>";
-    document.getElementById("display").src = "img/aashiqui_aa_gayi.png";
+    document.getElementById("display").src = "aashiqui_aa_gayi.png";
 }
 
 function audio11p(){
@@ -657,7 +657,7 @@ function audio12(){
   });
     document.querySelector(".status-duniyaa").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Duniyaa<p>";
-    document.getElementById("display").src = "img/duniyaa.png";
+    document.getElementById("display").src = "duniyaa.png";
 }
 
 function audio12p(){
@@ -697,7 +697,7 @@ function audio13(){
   });
     document.querySelector(".status-excuses").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Excuses<p>";
-    document.getElementById("display").src = "img/excuses.png";
+    document.getElementById("display").src = "excuses.png";
 }
 
 function audio13p(){
