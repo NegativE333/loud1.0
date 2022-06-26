@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loud</title>
+
+    <!--BOOTSTRAP LINK ADDED-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--FONT STYLE LINK ADDED-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME LINK ADDED-->
+    <script src="https://kit.fontawesome.com/3f656988f3.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <section id="title">
+        <div class="container-fluid2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-dark" href="#">
+                        <!--<h2 class="titleMain">loud</h2>-->
+                        <div class='console-container titleMain'><span id='text'></span>
+                            <div class='console-underscore' id='console'>&#95;</div>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="#divine">Divine</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#90's">90's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#latest">Latest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#pricing">Remix</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row sub">
+                <div class="col-lg-6">
+                    <h2 class="name"></h2>
+                    <h1 class="revealUp">Listen your favorite music for free!</h1>
+
+                    <div id="display-song">
+                        <strong>Now Playing:</strong>
+                        <div class="text-center display-songs">
+                            <br>
+                            <div class="hover">
+                                
+                                <figure>
+                                    <i class="fa-solid fa-angle-left previous"></i>
+                                    <img src="" alt="" id="display" height="35%" width="35%"
+                                        style="padding: 1rem; border-radius: 15%;">
+                                        <i class="fa-solid fa-angle-right next"></i>
+                                </figure>
+                            </div>
+                            <span class="time" style="padding-right: 1%;"></span>
+                            <input type="range" name="range" id="progressBar" value="0">
+                            <span class="duration"></span>
+                            <br>
+                            <p class="display" style="color: black; font-weight:bold;"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="list">
+        <div class="container">
+            <h2 class="text-center revealUp">Playlist</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-box clearfix">
+                        <div class="table-responsive">
+                            <table class="table user-list">
+                                <thead>
+                                    <tr>
+                                        <th><span>Song</span></th>
+                                        <th class="text-center">Catagory</th>
+                                        <th class="text-center"><span>Released Year</span></th>
+                                        <th class="text-center"><span>Singers</span></th>
+                                        <th class="text-center"><span>Movie</span></th>
+                                        <th class="text-center"><span>Play & Pause</span></th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="divine">
+                                            <img src="img/humare_sath_shri_raghunath.png" alt="">
+                                            <a class="song-name">Humaare Saath Shri Raghunath</a>
+                                            <em class="status-humare_sath_shri_raghunath"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Divine
+                                        </td>
+                                        <td class="text-center">
+                                            NA
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">NA</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">NA</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play humare_sath_shri_raghunath_s" onclick="audio1()"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause humare_sath_shri_raghunath_p" onclick="audio1p()"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td id="divine">
+                                            <img src="img/bavni.jpg" alt="">
+                                            <a class="song-name
+                                            ">Gajanan Maharaj Bavani</a>
+                                            <em class="status-bavni"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Divine
+                                        </td>
+                                        <td class="text-center">
+                                            NA
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Shubhangi Joshi</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">NA</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play bavni_s" onclick="audio14()"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause bavni_p" onclick="audio14p()"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td id="90's">
+                                            <img src="img/aye_mare_humsafar.png" alt="">
+                                            <a href="#" class="song-name">Ae Mare Humsafar</a>
+                                            <em class="status-aye_mare_humsafar"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            90's
+                                        </td>
+                                        <td class="text-center">
+                                            1988
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Alka Yagnik, Udit Narayan</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Qayamat se qayamat tak</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play aye_mare_humsafar_s" onclick="audio2()"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause aye_mare_humsafar_p" onclick="audio2p()"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/aankhein_khuli.png" alt="">
+                                            <a href="#90's" class="song-name">Aankhein Khuli</a>
+                                            <em class="status-aankhein_khuli"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            90's
+                                        </td>
+                                        <td class="text-center">
+                                            2000
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Lata Mangeshkar, Udit Narayan</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a>Mohabbatein</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play aankhein_khuli_s" onclick="audio3()"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause aankhein_khuli_p" onclick="audio3p()"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/saaton_janam.png" alt="">
+                                            <a href="#" class="song-name">Saaton Janam</a>
+                                            <em class="status-saaton_janam"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            90's
+                                        </td>
+                                        <td class="text-center">
+                                            1994
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Alka Yagnik, Kumar Sanu</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Dilwale</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play saaton_janam_s" onclick="audio4();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause saaton_janam_p" onclick="audio4p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/chand_se_parda.png" alt="">
+                                            <a href="#" class="song-name">Chand se Parda</a>
+                                            <em class="status-chand_se_parda"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            90's
+                                        </td>
+                                        <td class="text-center">
+                                            1994
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Kumar Sanu</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Aao payar karen</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play chand_se_parda_s" onclick="audio5()"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause chand_se_parda_p" onclick="audio5p()"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/meri_mehbooba.png" alt="">
+                                            <a href="#" class="song-name">Meri Mehbooba</a>
+                                            <em class="status-meri_mehbooba"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            90's
+                                        </td>
+                                        <td class="text-center">
+                                            1997
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Alka Yagnik, Kumar Sanu</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Pardes</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play meri_mehbooba_s" onclick="audio6();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause meri_mehbooba_p" onclick="audio6p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr id="latest">
+                                        <td>
+                                            <img src="img/ghalat_fehmi.png" alt="">
+                                            <a href="#" class="song-name">Ghalat Fehmi</a>
+                                            <em class="status-ghalat_fehmi"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2020
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Asim Azhar</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Superstar</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play ghalat_fehmi_s" onclick="audio7();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause ghalat_fehmi_p" onclick="audio7p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/soch_liya.png" alt="">
+                                            <a href="#" class="song-name">Soch Liya</a>
+                                            <em class="status-soch_liya"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2022
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Arijit Singh</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Radhe Shyam</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play soch_liya_s" onclick="audio8();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause soch_liya_p" onclick="audio8p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/aashiqui_aa_gayi.png" alt="">
+                                            <a href="#" class="song-name">Aashiqui Aa Gayi</a>
+                                            <em class="status-aashiqui_aa_gayi"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2022
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Arijit Singh</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Radhe Shyam</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play aashiqui_aa_gayi_s" onclick="audio11();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause aashiqui_aa_gayi_p" onclick="audio11p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/jaan_hai_meri.png" alt="">
+                                            <a href="#" class="song-name">Jaan Hai Meri</a>
+                                            <em class="status-jaan_hai_meri"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2022
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Arijit Singh</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Radhe Shyam</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play jaan_hai_meri_s" onclick="audio10();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause jaan_hai_meri_p" onclick="audio10p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/khairiyat.png" alt="">
+                                            <a href="#" class="song-name">Khairiyat</a>
+                                            <em class="status-khairiyat"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2019
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Arijit Singh</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Chhichhore</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play khairiyat_s" onclick="audio9();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause khairiyat_p" onclick="audio9();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/duniyaa.png" alt="">
+                                            <a href="#" class="song-name">Duniyaa</a>
+                                            <em class="status-duniyaa"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2019
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">Akhil Pasreja, Dhvani Bhanushali</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Luka Chuppi</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play duniyaa_s" onclick="audio12();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause duniyaa_p" onclick="audio12p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <img src="img/excuses.png" alt="">
+                                            <a href="#" class="song-name">Excuses</a>
+                                            <em class="status-excuses"></em>
+                                        </td>
+                                        <td class="text-center">
+                                            Latest
+                                        </td>
+                                        <td class="text-center">
+                                            2020
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="label label-default">AP Dhillon, Gurinder Gill</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="#">Excuses</a>
+                                        </td>
+                                        <td class="text-center" style="width: 15%;">
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-play excuses_s" onclick="audio13();"></i>
+                                                </span>
+                                            </a>
+                                            <a class="table-link">
+                                                <span class="fa-stack">
+                                                    <i class="fa-solid fa-pause excuses_p" onclick="audio13p();"></i>
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <i class="c-icon fa-brands fa-twitter fa-2x"></i>
+        <i class="c-icon fa-brands fa-facebook-f fa-2x"></i>
+        <i class="c-icon fa-brands fa-instagram fa-2x"></i>
+        <i class="c-icon fa-brands fa-linkedin-in fa-2x"></i>
+        <p>©2022 Copyright loud</p>
+
+    </footer>
+
+
+    <!--JS LINK ADDED-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!--JS LINK FOR ANIMATION-->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
