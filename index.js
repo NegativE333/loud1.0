@@ -101,7 +101,7 @@ function consoleText(words, id, colors) {
 
 
 let songIndex = 0;
-let audioElement1 = new Audio("music/Hamare_sath_shree_raghunath.mp3");
+let audioElement1 = new Audio("Hamare_sath_shree_raghunath.mp3");
 let audioElement2 = new Audio("music/Aye_Mere_Humsafar.mp3");
 let audioElement3 = new Audio("music/Aankhein_Khuli_Song_Mohabbatein.mp3");
 let audioElement4 = new Audio("music/Saaton_Janam_Main_Tere.mp3");
@@ -175,7 +175,7 @@ function audio1(){
     });
     document.querySelector(".status-humare_sath_shri_raghunath").innerHTML = "<strong>(Playing)</strong>";
     document.querySelector(".display").innerHTML = "<p>Humare Sath Shri Raghunath<p>";
-    document.getElementById("display").src = "img/humare_sath_shri_raghunath.png";
+    document.getElementById("display").src = "humare_sath_shri_raghunath.png";
 }
 
 function audio1p(){
