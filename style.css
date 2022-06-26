@@ -139,7 +139,7 @@ td img{
 
 #title{
     color: purple;
-    background-image: url(/backm.jpg);
+    background-image: url("backm.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
